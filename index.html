@@ -98,7 +98,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<a href="#two" onclick="allergyAdd();"class="w3-btn w3-grey w3-round"> Yes </a>
 	<a href="#two" onclick="coldAdd();"class="w3-btn w3-grey w3-round"> No </a>
     	<div id="content" class="w3-container">
-        <p>Are youre eyes watery or itchy?</p>    
+        <p>Are your eyes watery or itchy?</p>    
 		 <!-- added question into content section --> 
     	</div>
 </div>
@@ -107,12 +107,43 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
 	</div>
-	
+	<a href="#three" onclick="coldAdd();"class="w3-btn w3-grey w3-round"> Yes </a>
+	<a href="#three" onclick="allergyAdd();"class="w3-btn w3-grey w3-round"> No </a>
 	<div id="content" class="w3-container">
-		<p>Content of page 2 goes here.</p>
+		<p>Do you have a fever?</p>
+		<!-- Added content into page two content section and put corresponding cold and allergy syptoms -->
 	</div>
 </div>	
-
+	
+<div class="page" id="three">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Question 3</h1>
+	</div>
+	<a href="#four" onclick="coldAdd();"class="w3-btn w3-grey w3-round"> Yes </a>
+	<a href="#four" onclick="allergyAdd();"class="w3-btn w3-grey w3-round"> No </a>
+    	<div id="content" class="w3-container">
+        <p>Do you have a sore throat?</p>    
+		 <!-- added question into content section and added corresponfing allergy/cold responses --> 
+    	</div>
+</div>
+	<div class="page" id="four">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Question 4</h1>
+	</div>
+	<a href="#results" onclick="allergyAdd();"class="w3-btn w3-grey w3-round"> Yes </a>
+	<a href="#results" onclick="coldAdd();"class="w3-btn w3-grey w3-round"> No </a>
+    	<div id="content" class="w3-container">
+        <p>Do you have a sore throat?</p>    
+		 <!-- changed question number and page ID; added question into content section and added corresponfing allergy/cold responses --> 
+		</div>
+</div>
+	<div class="results" id="four">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Results
+		 <p id="results"></p> </h1>
+		<!-- Trying to imput code to make results page -->
+		
+    	</div>
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
 </footer>
