@@ -36,12 +36,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script>
-        var allergy_count = 0;
-        var cold_count = 0;
-
+        var allergy_count = 0; 
+        var cold_count = 0; 
 
         function allergyAdd(){
-            allergy_count = allergy_count + 1;
+            allergy_count = allergy_count + 1; 
 		alert(allergy_count);
 
         }
@@ -50,7 +49,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             cold_count = cold_count + 1;
         }
 	
-	function getResults() {
+	function getResults(){
 		var resultText = documenet.getElementById("results");
 		var allergyPercent = (allergy_count / 4) * 100;
 		var coldPercent = (cold_count / 4) * 100;
