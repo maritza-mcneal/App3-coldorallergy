@@ -137,37 +137,23 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
         <!-- moved question to appear above buttons --> 
 	<p>Are your symptoms seasonal or chronic?</p> 
-	<a href="#results" onclick="allergyAdd();"class="w3-btn w3-grey w3-round"> Yes </a>
-	<a href="#results" onclick="coldAdd();"class="w3-btn w3-grey w3-round"> No </a>
+	<a href="#five" onclick="allergyAdd();"class="w3-btn w3-grey w3-round"> Yes </a>
+	<a href="#five" onclick="coldAdd();"class="w3-btn w3-grey w3-round"> No </a>
     	<div id="content" class="w3-container">
            
 		 <!-- changed question number and page ID; added question into content section and added corresponfing allergy/cold responses --> 
 		</div>
 </div>
 		</div>
-	<div class="page" id="results">
+	<div class="page" id="five">
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>	  <script>
-        var allergy_count = 0;
-        var cold_count = 0; 
+		<h1>results</h1>
 
-
-        function allergyAdd(){
-            allergy_count = allergy_count + 1;
-        }
-
-        function coldAdd(){
-            cold_count = cold_count + 1;
-        }
-  </script></h1>
-	
-
-	</div> <p id="results"><resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; /p>
-    	<div id="content" class="w3-container">
-        <p>Results</p>    
-		</div>
-		
+	</div> 
+	<div id="content" class="w3-container">	
+		<p id="results"<>/p>
     	</div>
+		
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
 </footer>
