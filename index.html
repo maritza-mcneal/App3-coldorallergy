@@ -51,7 +51,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         }
 	
 	function getResults() {
-		var resultText = document.getElementById("results");
+		var resultText = documenet.getElementById("results");
 		var allergyPercent = (allergy_count / 4) * 100;
 		var coldPercent = (cold_count / 4) * 100;
 		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;
@@ -103,11 +103,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<h1>Question 1</h1>
 	<!-- added code to make yes or no buttons for question 1, response goes into function for allergy and cold --> 
 	</div>
-	<p>Are your eyes watery or itchy?</p>  
+	
     	<div id="content" class="w3-container">
+	<p>Are your eyes watery or itchy?</p>  
+	</div>
 	<a href="#two" onclick="allergyAdd();"class="w3-btn w3-grey w3-round"> Yes </a>
 	<a href="#two" onclick="coldAdd();"class="w3-btn w3-grey w3-round"> No </a>
-          
+     
 		 <!-- added question into content section --> 
     	</div>
 </div>
@@ -116,11 +118,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
 	</div>
+	<div id="content" class="w3-container">
 	 <!-- moved question to appear above buttons --> 
 	<p>Do you have a fever?</p>
 	<a href="#three" onclick="coldAdd();"class="w3-btn w3-grey w3-round"> Yes </a>
 	<a href="#three" onclick="allergyAdd();"class="w3-btn w3-grey w3-round"> No </a>
-	<div id="content" class="w3-container">
+	
 		
 		<!-- Added content into page two content section and put corresponding cold and allergy syptoms -->
 	</div>
