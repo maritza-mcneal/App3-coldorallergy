@@ -83,91 +83,91 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
-	<h1>Cold or Allergies?</h1> 
+	<h1>Cold or Allergies?</h1>  <! header on first page when visiting site >
 </div>
 	
 <div id="content" class="w3-container">
-	<p>Are you feeling like you might have a cold but wonder if it is allergies. Answer a few short questions to find out!</p>
+	<p>Are you feeling like you might have a cold but wonder if it is allergies. Answer a few short questions to find out!</p>  <! introduction paragraph >
 	
-	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
+	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>  <! code for button on first page, this brings you to series of questions >
 	
-	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>  <! Disclaimer that is displayed on first page >
  	
-	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>  <! disclaimer displayed on first page >
 
-<div class="page" id="one">
+<div class="page" id="one">  <! this page includes code that asks the user the first question. Once user presses the "Yes" or "No" button, the user will be directed to page 2 >
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 1</h1>
 	<!-- added code to make yes or no buttons for question 1, response goes into function for allergy and cold --> 
 	</div>
 	
     	<div id="content" class="w3-container">
-	<p>Are your eyes watery or itchy?</p>  
+	<p>Are your eyes watery or itchy?</p>   <! question 1 that is asked to user >
 	</div>
-	<a href="#two" onclick="allergyAdd();"class="w3-btn w3-grey w3-round"> Yes </a>
-	<a href="#two" onclick="coldAdd();"class="w3-btn w3-grey w3-round"> No </a>
+	<a href="#two" onclick="allergyAdd();"class="w3-btn w3-grey w3-round"> Yes </a>  <! if user responds yes, one willm be added to allergy >
+	<a href="#two" onclick="coldAdd();"class="w3-btn w3-grey w3-round"> No </a>  <! if user responds no, one will be added to code >
      
 		 <!-- added question into content section --> 
     	</div>
 </div>
 
-<div class="page" id="two">
+<div class="page" id="two">  <! page two includes information that asks user a question then takes their response and either adds to cold or adds to allergy >
 	<div class="w3-container w3-flat-carrot">
-		<h1>Question 2</h1>
+		<h1>Question 2</h1>  <! header displayed on page 2 >
 	</div>
 	<div id="content" class="w3-container">
 	 <!-- moved question to appear above buttons --> 
-	<p>Do you have a fever?</p>
-	<a href="#three" onclick="coldAdd();"class="w3-btn w3-grey w3-round"> Yes </a>
-	<a href="#three" onclick="allergyAdd();"class="w3-btn w3-grey w3-round"> No </a>
+	<p>Do you have a fever?</p>  <! second question that is asked to user >
+	<a href="#three" onclick="coldAdd();"class="w3-btn w3-grey w3-round"> Yes </a>  <! if user resonds yes, one will be added to cold >
+	<a href="#three" onclick="allergyAdd();"class="w3-btn w3-grey w3-round"> No </a>  <! if user responds no, one will be added to allergy  >
 	
 		
 		<!-- Added content into page two content section and put corresponding cold and allergy syptoms -->
 	</div>
 </div>	
 	
-<div class="page" id="three">
+<div class="page" id="three">  <! page 3 include the third question that the user is asked to help determine the probabilty of cold or allergies. once user clicks "yes" or "no", user will be redirected to page 3 >
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 3</h1>
+		<h1>Question 3</h1>  <! header displayed on page 3 >
 	</div>
 	 <!-- moved question to appear above buttons --> 
-	<p>Do you have a sore throat?</p>    
-	<a href="#four" onclick="coldAdd();"class="w3-btn w3-grey w3-round"> Yes </a>
-	<a href="#four" onclick="allergyAdd();"class="w3-btn w3-grey w3-round"> No </a>
+	<p>Do you have a sore throat?</p>     <! question asked on page 3 >
+	<a href="#four" onclick="coldAdd();"class="w3-btn w3-grey w3-round"> Yes </a>  <! one will be added to cold if user responds yes on question 3 >
+	<a href="#four" onclick="allergyAdd();"class="w3-btn w3-grey w3-round"> No </a>  <! one will be added to allergy if user responds no on question 3 >
     	<div id="content" class="w3-container">
 
 		 <!-- added question into content section and added corresponfing allergy/cold responses --> 
     	</div>
 </div>
-	<div class="page" id="four">
+	<div class="page" id="four">  <! this page includes content that askes user the 4th question to determine the probabiliyt of their illness being cold or allergies, once user clicks "yes" or "no", they will be redirected to page 5 >
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 4</h1>
+		<h1>Question 4</h1>  <! header on page four >
 	</div>
         <!-- moved question to appear above buttons --> 
-	<p>Are your symptoms seasonal or chronic?</p> 
-	<a href="#five" onclick="allergyAdd();"class="w3-btn w3-grey w3-round"> Yes </a>
-	<a href="#five" onclick="coldAdd();"class="w3-btn w3-grey w3-round"> No </a>
+	<p>Are your symptoms seasonal or chronic?</p>  <! 5th question displayed for user to answer >
+	<a href="#five" onclick="allergyAdd();"class="w3-btn w3-grey w3-round"> Yes </a>  <! if user responfd yes, one will be added to allergy >
+	<a href="#five" onclick="coldAdd();"class="w3-btn w3-grey w3-round"> No </a>  <! if user responds no, one will be added to cold >
     	<div id="content" class="w3-container">
            
 		 <!-- changed question number and page ID; added question into content section and added corresponfing allergy/cold responses --> 
 		</div>
 </div>
 		</div>
-	<div class="page" id="five">
+	<div class="page" id="five">  <! page five displays the results of the previous questions answered by the user >
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>results</h1>
+		<h1>results</h1>  <! this is the header displayed on page 5 >
 
 	</div> 
 	<div id="content" class="w3-container">	
 		<p id="results"></p>
     	</div>
-		<button onclick="getResults()">Results</button>
+		<button onclick="getResults()">Results</button>  <! button that once pressed will display probability that symptoms are either cold or allergies from previously answered questions >
 		
 	</div>
 
 		
 <footer class="w3-bottom w3-container w3-flat-carrot">
-	<p>DIY!</p>
+	<p>DIY!</p>  <! this is what is displayed on teh footer >
 </footer>
 
 </body>
