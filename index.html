@@ -46,13 +46,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         }
 
         function coldAdd(){
-            cold_count = cold_count + 1;
+            cold_count = cold_count + 1; //if question relates to allergy, add 1
         }
 	
 	function getResults(){
-		var allergyPercent = (allergy_count / 4) * 100;
-		var coldPercent = (cold_count / 4) * 100;
-		document.getElementById("results").innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold = " + coldPercent; 	
+		var allergyPercent = (allergy_count / 4) * 100; //equation to calculate the allergy percent by questions that answered "Yes" to allergies
+		var coldPercent = (cold_count / 4) * 100; //equation to calculate the cold percent by questions that answered "Yes" to cold
+		document.getElementById("results").innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold = " + coldPercent; 	//function to calculate the percent possibility that it is either allergies or a cold
 	}
 
   </script>
@@ -61,7 +61,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <style>	
 .body {
-     margin: 0em;
+     margin: 0em; 
 }
 
 .page {
@@ -83,7 +83,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
-	<h1>Cold or Allergies?</h1>
+	<h1>Cold or Allergies?</h1> 
 </div>
 	
 <div id="content" class="w3-container">
